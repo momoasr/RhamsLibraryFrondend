@@ -1,8 +1,7 @@
 import { Component, EventEmitter, Input, Output} from '@angular/core';
 
-
 @Component({
-    selector: 'books',
+    selector: 'book-list',
     templateUrl: './books.component.html',
     styleUrls: ['./books.component.css']
 })

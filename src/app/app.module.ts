@@ -3,14 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DetailsComponent } from './components/details.component';
 import { BookComponents } from './components/books.component';
+import { HomeComponent } from './components/home/home.component';
+import { BooksComponent } from './components/books/books.component';
+import { AddBookComponent } from './components/add-book/add-book.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DetailsComponent,
-    BookComponents
+    BookComponents,
+    HomeComponent,
+    BooksComponent,
+    AddBookComponent
   ],
   imports: [
     BrowserModule,
