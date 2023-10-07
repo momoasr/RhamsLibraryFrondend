@@ -1,5 +1,5 @@
 
-<form [formGroup]="createBookForm" (ngSubmit)="onCreateBook()" class="form-horizontal">
+<form [formGroup]="createBookFormGroup" (ngSubmit)="onCreateBook()" class="form-horizontal">
     <div class="panel panel-primary">
         <div class="panel-heading">
             <h3 class="panel-title"><h1>Create Book Form</h1></h3>
@@ -7,21 +7,21 @@
         <div class="panel-body">
             <div class="form-group">
                 <h4>Create Book</h4>
-                <label class="col-sm-2 control-label" for="Title">Title</label>
+                <label class="col-sm-2 control-label" for="input-title">Title</label>
                 <div class="col-sm-8">
-                    <input id="Title" formControlName="Title" type="text" class="form-control">
+                    <input formControlName="title" type="text" id="input-title" class="form-control">
                 </div>
-                <label class="col-sm-2 control-label" for="Author">Author</label>
+                <label class="col-sm-2 control-label" for="author">Author</label>
                 <div class="col-sm-8">
-                    <input id="Author" formControlName="Title" type="text" class="form-control">
+                    <input id="author" formControlName="author" type="text" class="form-control">
                 </div>
-                <label class="col-sm-2 control-label" for="Genre">Genre</label>
+                <label class="col-sm-2 control-label" for="genre">Genre</label>
                 <div class="col-sm-8">
-                    <input id="Genre" formControlName="Title" type="text" class="form-control">
+                    <input id="genre" formControlName="genre" type="text" class="form-control">
                 </div>
-                <label class="col-sm-2 control-label" for="Year">Year</label>
+                <label class="col-sm-2 control-label" for="year">Year</label>
                 <div class="col-sm-8">
-                    <input id="Year" formControlName="Year" type="text" class="form-control">
+                    <input id="year" formControlName="year" type="text" class="form-control">
                 </div>
             </div>   
         </div>

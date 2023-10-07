@@ -9,7 +9,7 @@ import { Book } from '../models/book.model';
   styleUrls: ['./add-book.component.css']
 })
 export class AddBookComponent implements OnInit {
-  createBookForm!: FormGroup;
+  createBookFormGroup!: FormGroup;
   books: Book[] = [];
   createBook!: Book;
   
@@ -18,15 +18,22 @@ export class AddBookComponent implements OnInit {
   
 
   ngOnInit(){
-    this.createBookForm = new FormGroup({
-      title: new FormControl(),
-      author: new FormControl(),
-      genre: new FormControl(),
-      year: new FormControl()
+    // this.createBookFormGroup = new FormGroup({
+    //   title: new FormControl(),
+    //   author: new FormControl(),
+    //   genre: new FormControl(),
+    //   year: new FormControl()
+    // });
+    this.createBookFormGroup = this.fb.group({
+      title: [''],
+      author: [''],
+      genre: [''],
+      year: [2020],
     });
   }
   onCreateBook(): void {
-    console.log(this.createBookForm.value);
+    console.log(this.createBookFormGroup.value);
+    console.log(this.createBookFormGroup.valid);
   }
   
 }
