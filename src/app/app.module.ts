@@ -7,6 +7,7 @@ import { BookComponents } from './components/books.component';
 import { HomeComponent } from './components/home/home.component';
 import { BooksComponent } from './components/books/books.component';
 import { AddBookComponent } from './components/add-book/add-book.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AddBookComponent } from './components/add-book/add-book.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
