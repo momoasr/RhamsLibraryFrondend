@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DateTimeService } from 'src/app/services/date-time.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'RhamsLibraryFrondend';
+  dateTimeToDisplay = '';
+  title = 'RhamsLibraryFrontend';
+  constructor(private service: DateTimeService){};
+
+  ngOnInit(){
+    this.dateTimeToDisplay = this.service.getCurrentDateTime();
+  }
 }
