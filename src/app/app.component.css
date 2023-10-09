@@ -1,0 +1,17 @@
+header{
+    background-color: rgb(174, 173, 155);
+    
+}
+h2{
+    color: #000;
+}
+p{
+    color: #000;
+}
+article {
+    background-color: rgb(206, 199, 175);
+    opacity: 0.80;
+  }
+footer{
+    background-color: rgb(174, 173, 155);
+}

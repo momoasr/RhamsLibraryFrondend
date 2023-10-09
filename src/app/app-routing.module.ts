@@ -4,13 +4,15 @@ import { BookComponents } from './components/books.component';
 import { HomeComponent } from './components/home/home.component';
 import { DetailsComponent } from './components/details/details.component';
 import { AddBookComponent } from './components/add-book/add-book.component';
+import { RemoveBookComponent } from './components/remove-book/remove-book.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent },
   { path: 'book-list', component: BookComponents },
   { path: 'search-book', component: DetailsComponent},
-  { path: 'add-book', component: AddBookComponent }
+  { path: 'add-book', component: AddBookComponent },
+  { path: 'remove-book', component: RemoveBookComponent}
 ];
 
 @NgModule({
